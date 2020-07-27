@@ -1,9 +1,12 @@
+# Install Basic Software
+
 install homebrew: https://treehouse.github.io/installation-guides/mac/homebrew # Might need to update Xcode
 install iterm2: https://www.iterm2.com/
 
 brew install go
 brew install python3
 pip3 install flake8-black
+pip3 install pytest
 brew install ruby
 brew install pylint
 brew install watchman
