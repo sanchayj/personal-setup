@@ -13,6 +13,7 @@ brew install neovim
 brew install yarn
 brew install zsh zsh-completions # zsh-completions is for tab completions in commands
 brew install yamllint # for ze yaml linting needs
+brew install exercism
 
 chsh -s \$(which zsh) # Will change default shell to zsh, requires password
 
