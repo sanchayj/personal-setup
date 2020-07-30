@@ -3,20 +3,21 @@
 install homebrew: https://treehouse.github.io/installation-guides/mac/homebrew # Might need to update Xcode
 install iterm2: https://www.iterm2.com/
 
-brew install go
-brew install python3
-pip3 install flake8-black
-pip3 install pytest
-brew install ruby
-brew install pylint
-brew install watchman
-brew install fzf # fuzzy search utility
-brew install tmux
-brew install neovim
-brew install yarn
-brew install zsh zsh-completions # zsh-completions is for tab completions in commands
-brew install yamllint # for ze yaml linting needs
-brew install exercism
+brew install go  
+brew install python3  
+pip3 install flake8-black  
+pip3 install pytest  
+pip3 install isort  
+brew install ruby  
+brew install pylint  
+brew install watchman  
+brew install fzf  
+brew install tmux  
+brew install neovim  
+brew install yarn  
+brew install zsh zsh-completions  
+brew install yamllint # for ze yaml linting needs  
+brew install exercism  
 
 chsh -s \$(which zsh) # Will change default shell to zsh, requires password
 
@@ -42,28 +43,30 @@ Run :PlugInstall inside init.vim to install plugins
 
 From inside Vim, run :CocInstall coc-python coc-json coc-snippets coc-yaml coc-vimlsp coc-tsserver coc-go coc-solargraph coc-rust-analyzer coc-sh coc-markdownlint coc-sql coc-html
 
+Put .flake8 file in the home directory
+
 for COC guide use: https://www.chrisatmachine.com/Neovim/04-vim-coc/ 
 
 Manage packages for:
-brew
-pip3
-plug (vim)
-coc (vim)
-app store 
-system software updates
+brew  
+pip3  
+plug (vim)  
+coc (vim)  
+app store  
+system software updates  
 
-Backup files:
-~/.config/nvim/
+Backup files:  
+~/.config/nvim/  
 
-Useful applications:
-Coffee Buzz
-Amethyst
-Backup and Sync (Google Drive)
-Raindrop.io
-Notion
-Todoist
-Alfred 4
-Brave (browser)
-iterm2
-Office Suite
-Pock
+Useful applications:  
+Coffee Buzz  
+Amethyst  
+Backup and Sync (Google Drive)  
+Raindrop.io  
+Notion  
+Todoist  
+Alfred 4  
+Brave (browser)  
+iterm2  
+Office Suite  
+Pock  
