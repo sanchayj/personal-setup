@@ -18,6 +18,7 @@ brew install yarn
 brew install zsh zsh-completions  
 brew install yamllint # for ze yaml linting needs  
 brew install exercism  
+brew install ripgrep  
 
 chsh -s \$(which zsh) # Will change default shell to zsh, requires password
 
