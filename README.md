@@ -41,6 +41,7 @@ Run command in iterm for downloading plug.vim (vim-plug): curl -fLo ~/.local/sha
 
 Create a directory: ./config/nvim/ and add your init.vim file to it
 Run :PlugInstall inside init.vim to install plugins
+Run :GoInstallBinaries to install all the vim-go plugins
 
 From inside Vim, run :CocInstall coc-python coc-json coc-snippets coc-yaml coc-vimlsp coc-tsserver coc-go coc-solargraph coc-rust-analyzer coc-sh coc-markdownlint coc-sql coc-html
 
