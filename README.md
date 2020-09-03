@@ -73,6 +73,7 @@
     * Mouse -> Point & Click -> Uncheck -> Scroll Direction Natural
     * Mouse -> Point & Click -> Check -> Secondary click on right side
     * Tracking Speed 5 for both mouse and trackpad
+5. Setup SSH keys for work and/or personal repositories
 
 ### Manual App Installs
 1. Todoist
