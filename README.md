@@ -1,74 +1,60 @@
 # Install Basic Software
 
-install homebrew: https://treehouse.github.io/installation-guides/mac/homebrew # Might need to update Xcode
-install iterm2: https://www.iterm2.com/
+## Homebrew maintenance
 
-brew install go  
-brew install python3  
-pip3 install flake8-black  
-pip3 install pytest  
-pip3 install isort  
-brew install ruby  
-brew install pylint  
-brew install watchman  
-brew install fzf  
-brew install tmux  
-brew install neovim  
-brew install yarn  
-brew install zsh zsh-completions  
-brew install yamllint # for ze yaml linting needs  
-brew install exercism  
-brew install ripgrep  
+1. `brew update`
+2. `brew upgrade`
+3. `brew cask upgrade`
 
-chsh -s \$(which zsh) # Will change default shell to zsh, requires password
+## Manual
 
-sh -c "\$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # Install oh-my-zsh
+1. Install homebrew: https://treehouse.github.io/installation-guides/mac/homebrew # Might need to update Xcode
+2. `brew install python3 ansible git`
 
-# Install Themes
+## Ansible
 
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-ZSH_THEME="powerlevel9k/powerlevel9k" in .zshrc
+1. `brew install <apps>`
+    * go
+    * ruby
+    * pylint
+    * watchman
+    * tmux
+    * neovim
+    * yarn
+    * zsh
+    * zsh-completions
+    * yamllint
+    * ripgrep
+2. `pip3 install <apps>`
+    * flake8-black
+    * pytest
+    * isort
+3. `brew cask install <apps>`
+    * alfred
+    * amethyst
+    * brave-browser
+    * google-backup-and-sync
+    * microsoft-office
+    * pock
+    * notion
+    * iterm2
+    * raindropio
+4. Shell Scripts:
+    * chsh -s \$(which zsh) # Will change default shell to zsh, requires password
+    * sh -c "\$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # Install oh-my-zsh
+    * git clone your personal-setup repo, place all files in proper directories, nvim in .config
+    * git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+    * git clone source code pro for powerline and install it on mac?
+    * Download iterm2 Material Design theme: https://github.com/MartinSeeler/iterm2-material-design
+    * Run command in iterm for downloading plug.vim (vim-plug): curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    * :PlugInstall and :GoInstallBinaries inside a vim file
+    * From inside Vim, run :CocInstall coc-python coc-json coc-snippets coc-yaml coc-vimlsp coc-tsserver coc-go coc-solargraph coc-rust-analyzer coc-sh coc-markdownlint coc-sql coc-html
+5. OSX Settings
+    * Apply source code pro font in iterm -> profile settings
+    * iterm2 > preferences > profiles > colors > color presets > import > material-design-colors.itermcolors
+    * In Iterm2 preferences -> Keys -> have "cmd/" send "++" to comment out and uncomment using the nerdcommenter extension quickly
 
-Install Source Code Pro for Powerline font (semibold)
-  You'll need to get the nerd font version from vim-devicons for compatibility with nerdtree
-Apply font in iterm -> profile settings
-
-In Iterm2 preferences -> Keys -> have "cmd/" send "++" to comment out and uncomment using the nerdcommenter extension quickly
-
-Download iterm2 Material Design theme: https://github.com/MartinSeeler/iterm2-material-design
-
-Run command in iterm for downloading plug.vim (vim-plug): curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-Create a directory: ./config/nvim/ and add your init.vim file to it
-Run :PlugInstall inside init.vim to install plugins
-Run :GoInstallBinaries to install all the vim-go plugins
-
-From inside Vim, run :CocInstall coc-python coc-json coc-snippets coc-yaml coc-vimlsp coc-tsserver coc-go coc-solargraph coc-rust-analyzer coc-sh coc-markdownlint coc-sql coc-html
-
-Put .flake8 file in the home directory
-
-for COC guide use: https://www.chrisatmachine.com/Neovim/04-vim-coc/ 
-
-Manage packages for:
-brew  
-pip3  
-plug (vim)  
-coc (vim)  
-app store  
-system software updates  
-
-Backup files:  
-~/.config/nvim/  
-
-Useful applications:  
-Coffee Buzz  
-Amethyst  
-Backup and Sync (Google Drive)  
-Raindrop.io  
-Notion  
-Todoist  
-Alfred 4  
-Brave (browser)  
-iterm2  
-Office Suite  
-Pock  
+### Manual App Installs
+1. Todoist
+2. Coffee Buzz
+3. Be Focused
