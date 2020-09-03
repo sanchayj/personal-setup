@@ -18,6 +18,7 @@
     * ruby
     * pylint
     * watchman
+    * fzf
     * tmux
     * neovim
     * yarn
@@ -25,6 +26,7 @@
     * zsh-completions
     * yamllint
     * ripgrep
+    * minikube
 2. `pip3 install <apps>`
     * flake8-black
     * pytest
@@ -39,6 +41,8 @@
     * notion
     * iterm2
     * raindropio
+    * docker
+    * spotify
 4. Shell Scripts:
     * chsh -s \$(which zsh) # Will change default shell to zsh, requires password
     * sh -c "\$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # Install oh-my-zsh
@@ -49,10 +53,26 @@
     * Run command in iterm for downloading plug.vim (vim-plug): curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     * :PlugInstall and :GoInstallBinaries inside a vim file
     * From inside Vim, run :CocInstall coc-python coc-json coc-snippets coc-yaml coc-vimlsp coc-tsserver coc-go coc-solargraph coc-rust-analyzer coc-sh coc-markdownlint coc-sql coc-html
-5. OSX Settings
-    * Apply source code pro font in iterm -> profile settings
-    * iterm2 > preferences > profiles > colors > color presets > import > material-design-colors.itermcolors
-    * In Iterm2 preferences -> Keys -> have "cmd/" send "++" to comment out and uncomment using the nerdcommenter extension quickly
+
+### Manual OSX Settings
+1. Apply source code pro font in iterm -> profile settings
+2. iterm2 > preferences > profiles > colors > color presets > import > material-design-colors.itermcolors
+3. In Iterm2 preferences -> Keys -> have "cmd/" send "++" to comment out and uncomment using the nerdcommenter extension quickly
+4. Other OSX settings:
+    * Automatically hide dock
+    * General -> Show Scroll Bars -> Always
+    * General -> Default Browser -> Brave
+    * General -> Uncheck -> Close Windows when quitting an app
+    * General -> Uncheck -> Allow Handoff between this mac and other devices
+    * Security & Privacy -> Require password immediately after sleep
+    * Display -> Uncheck -> Automatically adjust brightness
+    * Display -> Uncheck -> True Tone
+    * Display -> Nightshift -> Custom
+    * Trackpad -> Point & Click -> Secondary Click -> Click in bottom right corner
+    * Trackpad -> Scroll & Zoom -> Uncheck -> Scroll Direction Natural
+    * Mouse -> Point & Click -> Uncheck -> Scroll Direction Natural
+    * Mouse -> Point & Click -> Check -> Secondary click on right side
+    * Tracking Speed 5 for both mouse and trackpad
 
 ### Manual App Installs
 1. Todoist
