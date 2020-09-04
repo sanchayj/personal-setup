@@ -1,2 +1,86 @@
 - name: Hello ansible
   shell: echo "Hello ansible" >> /tmp/log
+
+- name: Install apps with brew
+  homebrew: name={{ item }} state=present
+  with_items:
+    - go
+    - ruby
+    - pylint
+    - watchman
+    - fzf
+    - tmux
+    - neovim
+    - yarn
+    - zsh
+    - zsh-completions
+    - yamllint
+    - ripgrep
+    - minikube
+    - jq
+
+- name: Install python3 packages
+  pip: name={{ item }} state=present
+  with_items:
+    - flake8-black
+    - pytest
+    - isort
+
+- name: Install brew cask apps
+  homebrew_cask: name={{ item }} state=present
+  with_items:
+    - alfred
+    - amethyst
+    - brave-browser
+    - google-backup-and-sync
+    - microsoft-office
+    - pock
+    - notion
+    - iterm2
+    - raindropio
+    - docker
+    - spotify
+
+- name: Create .config directory
+  file:
+    path: ~/.config
+    state: directory
+
+- name: Set zsh as default shell
+  shell: chsh -s $(which zsh)
+
+- name: Install oh-my-zsh
+  shell: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+- name: Clone powerlevel10k
+  git:
+    repo: https://github.com/romkatv/powerlevel10k.git
+    dest: ~/.oh-my-zsh/custom/themes/powerlevel10k
+
+- name: Clone Sauce Code Pro nerd font repo
+  git:
+    repo: https://github.com/ryanoasis/nerd-fonts.git
+    dest: ~/Downloads/nerd-fonts
+
+- name: Clone iterm2 theme
+  git: 
+    repo: https://github.com/MartinSeeler/iterm2-material-design.git
+    dest: ~/Downloads/iterm2-material-design
+
+- name: Copy .zshrc config to home
+  copy:
+    src: "{{ role_path }}/files/.zshrc"
+    dest: ~/.zshrc
+
+- name: Copy .flake8 config to home
+  copy:
+    src: "{{ role_path }}/files/.flake8"
+    dest: ~/.flake8
+
+- name: Copy nvim into .config folder
+  copy:
+    src: "{{ role_path }}/files/nvim"
+    dest: ~/.config/nvim
+
+- name: Install vim plugins
+  command: nvim -c "PlugInstall" -c "CocInstall coc-python coc-json coc-snippets coc-yaml coc-vimlsp coc-tsserver coc-go coc-solargraph coc-rust-analyzer coc-sh coc-markdownlint coc-sql coc-html" -c "GoInstallBinaries" -c ":qa!"
