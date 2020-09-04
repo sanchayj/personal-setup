@@ -2,44 +2,48 @@
   shell: echo "Hello ansible" >> /tmp/log
 
 - name: Install apps with brew
-  homebrew: name={{ item }} state=present
-  with_items:
-    - go
-    - ruby
-    - pylint
-    - watchman
-    - fzf
-    - tmux
-    - neovim
-    - yarn
-    - zsh
-    - zsh-completions
-    - yamllint
-    - ripgrep
-    - minikube
-    - jq
+  homebrew:
+    name:
+      - go
+      - ruby
+      - pylint
+      - watchman
+      - fzf
+      - tmux
+      - neovim
+      - yarn
+      - zsh
+      - zsh-completions
+      - yamllint
+      - ripgrep
+      - minikube
+      - jq
+    state: present
 
 - name: Install python3 packages
-  pip: name={{ item }} state=present
-  with_items:
-    - flake8-black
-    - pytest
-    - isort
+  pip:
+    name:
+      - flake8-black
+      - pytest
+      - isort
+    state: present
 
 - name: Install brew cask apps
-  homebrew_cask: name={{ item }} state=present
-  with_items:
-    - alfred
-    - amethyst
-    - brave-browser
-    - google-backup-and-sync
-    - microsoft-office
-    - pock
-    - notion
-    - iterm2
-    - raindropio
-    - docker
-    - spotify
+  homebrew_cask:
+    name:
+      - alfred
+      - amethyst
+      - brave-browser
+      - google-backup-and-sync
+      - microsoft-office
+      - pock
+      - notion
+      - iterm2
+      - raindropio
+      - docker
+      - spotify
+    state: present
+    accept_external_apps: True
 
 - name: Create .config directory
   file:
@@ -48,9 +52,11 @@
 
 - name: Set zsh as default shell
   shell: chsh -s $(which zsh)
+  ignore_errors: yes
 
 - name: Install oh-my-zsh
   shell: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  ignore_errors: yes
 
 - name: Clone powerlevel10k
   git:
