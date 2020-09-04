@@ -55,11 +55,10 @@
     * From inside Vim, run :CocInstall coc-python coc-json coc-snippets coc-yaml coc-vimlsp coc-tsserver coc-go coc-solargraph coc-rust-analyzer coc-sh coc-markdownlint coc-sql coc-html
 
 ### Manual OSX Settings
-1. chsh -s \$(which zsh) 
-2. Apply source code pro font in iterm -> profile settings
-3. iterm2 > preferences > profiles > colors > color presets > import > material-design-colors.itermcolors
-4. In Iterm2 preferences -> Keys -> have "cmd/" send "++" to comment out and uncomment using the nerdcommenter extension quickly
-5. Other OSX settings:
+1. Apply source code pro font in iterm -> profile settings
+2. iterm2 > preferences > profiles > colors > color presets > import > material-design-colors.itermcolors
+3. In Iterm2 preferences -> Keys -> have "cmd/" send "++" to comment out and uncomment using the nerdcommenter extension quickly
+4. Other OSX settings:
     * Automatically hide dock
     * General -> Show Scroll Bars -> Always
     * General -> Default Browser -> Brave
@@ -74,7 +73,7 @@
     * Mouse -> Point & Click -> Uncheck -> Scroll Direction Natural
     * Mouse -> Point & Click -> Check -> Secondary click on right side
     * Tracking Speed 5 for both mouse and trackpad
-6. Setup SSH keys for work and/or personal repositories
+5. Setup SSH keys for work and/or personal repositories
 
 ### Manual App Installs
 1. Todoist
