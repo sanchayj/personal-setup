@@ -1,0 +1,5 @@
+[laptop]
+localhost
+
+[laptop:vars]
+ansible_python_interpreter=/usr/local/bin/python3
