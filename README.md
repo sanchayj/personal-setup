@@ -78,8 +78,11 @@ OSX defaults can change often with upgrades, not worth maintaining this section 
 1. Todoist
 2. Coffee Buzz
 3. Be Focused Pro
-4. Spark Email
 
 ### Troubleshooting
 1. Path in .zshrc, `export ZSH=` might need to be updated if username doesn't match personal
 2. ansible_python_interpreter var would need to be updated if python3 isn't in /usr/bin/python3
+3. May need to run the command `pip3 install -U neovim` for pynvim interpreter to work
+4. Run `:checkhealth` in vim to ensure everything is working smoothly
+5. `CocInstall` and `GoInstallBinaries` sometimes seems to not work, re-run those two commands if
+that's the case.
