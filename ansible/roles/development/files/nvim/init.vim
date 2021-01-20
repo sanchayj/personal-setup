@@ -51,6 +51,9 @@ command Isort !python3 -m isort %
 " command for prettier formatting
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
+" command using python to pretty print json
+com! Json %!python -m json.tool
+
 " Nerd tree settings
 inoremap jk <ESC>
 nmap <C-n> :NERDTreeToggle<CR>
