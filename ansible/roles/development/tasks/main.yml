@@ -39,6 +39,7 @@
       - raindropio
       - docker
       - spotify
+      - expressvpn
     state: present
     accept_external_apps: True # If not installed by brew
 
