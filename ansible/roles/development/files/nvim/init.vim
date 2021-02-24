@@ -12,6 +12,7 @@ Plug 'fatih/vim-go'
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 Plug 'christoomey/vim-tmux-navigator'
 
