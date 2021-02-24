@@ -86,4 +86,4 @@ OSX defaults can change often with upgrades, not worth maintaining this section 
 4. Run `:checkhealth` in vim to ensure everything is working smoothly
 5. `CocInstall` and `GoInstallBinaries` sometimes seems to not work, re-run those two commands if
 that's the case.
-6. Use `:PlugUpdate` or `:CocUpdate` to update extensions and plugins
+6. Use `:PlugUpdate` or `:CocUpdate` to update extensions and plugins. May need to run `:source %` before
