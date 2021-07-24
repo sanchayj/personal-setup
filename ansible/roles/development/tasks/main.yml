@@ -40,6 +40,7 @@
       - docker
       - spotify
       - expressvpn
+      - visual-studio-code
     state: present
     accept_external_apps: True # If not installed by brew
 
