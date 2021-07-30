@@ -41,6 +41,7 @@
       - spotify
       - expressvpn
       - visual-studio-code
+      - slack
     state: present
     accept_external_apps: True # If not installed by brew
 
