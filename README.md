@@ -48,7 +48,7 @@ Git clone this repo, and from the ansible directory:
 
 OSX defaults can change often with upgrades, not worth maintaining this section over the years in ansible
 
-1. Apply source code pro font in iterm -> profile settings
+1. Apply SauceCodePro Nerd Font Semibold in iterm -> profile settings
 2. iterm2 > preferences > profiles > colors > color presets > import > material-design-colors.itermcolors
 3. In Iterm2 preferences -> Keys -> have "cmd/" send "++" to comment out and uncomment using the nerdcommenter extension quickly
 4. Other OSX settings:
