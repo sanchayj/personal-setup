@@ -29,7 +29,7 @@
   homebrew_cask:
     name:
       - alfred
-      - amethyst
+      - rectangle
       - brave-browser
       - google-backup-and-sync
       - microsoft-office
