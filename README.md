@@ -61,6 +61,7 @@ OSX defaults can change often with upgrades, not worth maintaining this section 
     * Display -> Uncheck -> Automatically adjust brightness
     * Display -> Uncheck -> True Tone
     * Display -> Nightshift -> Custom
+    * Accessibility -> Display -> Reduce Motion
     * Trackpad -> Point & Click -> Secondary Click -> Click in bottom right corner
     * Trackpad -> Scroll & Zoom -> Uncheck -> Scroll Direction Natural
     * Mouse -> Point & Click -> Uncheck -> Scroll Direction Natural
